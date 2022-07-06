@@ -74,6 +74,7 @@ message.reply({ embeds: [embed.setDescription(`${member} adlı kullanıcıya <@&
 }
 } else  if (button.customId === "unregister") {
 if (!message.member.permissions.has("ADMINISTRATOR") && !config.Roles.Register.some((x) => message.member.roles.cache.has(x))) return message.reply({ embeds: [embed.setDescription("Yeterli yetkilere sahip değilsiniz.")] }).catch((error) => console.log(error));
+if (member.roles.cache.has(config.Roles.Booster)) return message.reply({ embeds: [embed.setDescription(":no_entry_sign: Boost basmış bir kullanıcı kayıtsıza atılamaz.")] }).catch((error) => console.log(error));
 member.roles.set([config.Roles.Unregistered]).catch((x) => {    });
 member.setNickname(`${config.Other.NamePrefix ? config.Other.NamePrefix : ""} İsim ${config.Other.NameSymbol ? config.Other.NameSymbol : "'"} Yaş`)
 message.reply({ embeds: [embed.setDescription(`${member} adlı kullanıcı kayıtsıza atıldı!`)] }).catch((error) => console.log(error));
