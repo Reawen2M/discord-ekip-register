@@ -1,0 +1,28 @@
+{
+"guildID": "GUILD_ID",
+"Roles": {
+    "Man": ["MAN_ROLES"],
+    "Woman": ["WOMAN_ROLES"],
+    "Register": ["REGISTER_AUTHOR_ROLES"],
+    "Unregistered": "UNREGISTER_ROLE",
+    "Tagged": "FAMILY_ROLE",
+    "Vip": "VIP_ROLE"
+}, "Channels": {
+    "Register": "REGISTER_CHANNEL",
+    "Rules": "RULES_CHANNEL",
+    "Chat": "CHAT_CHANNEL",
+    "TagLog": "TAG_LOG_CHANNEL"
+}, "Other": {
+    "Tag": ["YOUR_TAGS"],
+    "NamePrefix": "•",
+    "NameSymbol": "|",
+    "URL": "",
+    "VanityURL": "https://discord.gg/1947"
+}, "Modes": {
+    "Tag": true,
+    "Name": true,
+    "DmMessages": false,
+    "ChatMessages": true
+}
+}
+  

@@ -1,0 +1,20 @@
+{
+  "name": "xx",
+  "version": "3.0.0",
+  "description": "se",
+  "main": "reawen.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": ["reawen"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+   "node": "16.6.0"
+  },
+  "dependencies": {
+    "path": "^0.12.7",
+    "fs": "^0.0.2",
+    "discord.js": "^13.0.1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "prefix":".",
+  "token":"BOT_TOKEN",
+  "owners": ["913098051537760327"],
+  "mongoURL": "mongodb+srv://MONGO_ID:MONGO_PASSWORD@cluster0.kslvq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+}
