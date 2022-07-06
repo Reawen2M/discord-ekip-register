@@ -71,14 +71,14 @@ collector.on('collect', async (button) => {
     if (button.isButton()) {
         if (button.customId === "erkek") {
             member.setNickname(name).catch((x) => console.error(x));
-            member.roles.set(member.roles.cache.has("992547058303119442") ? ["992547058303119442", config.Roles.Man[0], config.Roles.Man[1], config.Roles.Man[2]] : config.Roles.Man).catch((x) => console.error(x));
+            member.roles.set(member.roles.cache.has(config.Roles.Booster) ? [config.Roles.Booster, config.Roles.Man[0], config.Roles.Man[1], config.Roles.Man[2]] : config.Roles.Man).catch((x) => console.error(x));
             await isimler.findOneAndUpdate({ guildID: message.guild.id, userID: member.user.id }, { $push: { isimler: { name: name, yetkili: message.author.id,  rol: config.Roles.Man[0], date: Date.now() } } }, { upsert: true });
             message.reply({ embeds: [embed.setDescription(`${member} isimli üye **Erkek** olarak kayıt edildi!`)]}).catch((error) => console.log(error));
             if (config.Modes.ChatMessages == true) message.guild.channels.cache.get(config.Channels.Chat).send({ embeds: [embed.setDescription(`Aramıza hoş geldin! ${member}. Sunucumuzun kuralları ${config.Channels.Rules ? `<#${config.Channels.Rules}>` : "#kurallar"} isimli kanallarda belirtilmiştir. Seninle birlikte sunucumuz **${message.guild.memberCount}** adet kişiye ulaştı!`)] }).catch((error) => console.log(error));
             if (config.Other.Tag.some((x) => member.user.tag.includes(x))) member.roles.add(config.Roles.Tagged);
         } else  if (button.customId === "kadın") {
             member.setNickname(name).catch((x) => console.error(x));
-            member.roles.set(member.roles.cache.has("992547058303119442") ? ["992547058303119442", config.Roles.Woman[0], config.Roles.Woman[1], config.Roles.Woman[2]] : config.Roles.Woman).catch((x) => console.error(x));            await isimler.findOneAndUpdate({ guildID: message.guild.id, userID: member.user.id }, { $push: { isimler: { name: name, yetkili: message.author.id,  rol: config.Roles.Woman[0], date: Date.now() } } }, { upsert: true });
+            member.roles.set(member.roles.cache.has(config.Roles.Booster) ? [config.Roles.Booster, config.Roles.Woman[0], config.Roles.Woman[1], config.Roles.Woman[2]] : config.Roles.Woman).catch((x) => console.error(x));            await isimler.findOneAndUpdate({ guildID: message.guild.id, userID: member.user.id }, { $push: { isimler: { name: name, yetkili: message.author.id,  rol: config.Roles.Woman[0], date: Date.now() } } }, { upsert: true });
             message.reply({ embeds: [embed.setDescription(`${member} isimli üye **Kadın** olarak kayıt edildi!`)] }).catch((error) => console.log(error));
             if (config.Modes.ChatMessages == true) message.guild.channels.cache.get(config.Channels.Chat).send({ embeds: [embed.setDescription(`Aramıza hoş geldin! ${member}. Sunucumuzun kuralları ${config.Channels.Rules ? `<#${config.Channels.Rules}>` : "#kurallar"} isimli kanallarda belirtilmiştir. Seninle birlikte sunucumuz **${message.guild.memberCount}** adet kişiye ulaştı!`)] }).catch((error) => console.log(error));
             if (config.Other.Tag.some((x) => member.user.tag.includes(x))) member.roles.add(config.Roles.Tagged);
