@@ -20,9 +20,6 @@ Bu sistemler dışında **hoş geldin mesajı** ve **tag alıp bırakma sistemi*
 Tag Görüntüleme Mesajı:
 <img src="https://cdn.discordapp.com/attachments/988877613953077331/989297298209120266/unknown.png">
 <hr>
-Hoş Geldin Mesajı:
-<img src="https://cdn.discordapp.com/attachments/970299741994897448/989298257480019999/unknown.png">
-<hr>
 Tag Mesajı (Parantez içinde taglardan hangilerini alıp hangilerini bıraktığını gösterir.):
 <img src="https://cdn.discordapp.com/attachments/988877613953077331/989298505392726087/unknown.png">
 <hr>
