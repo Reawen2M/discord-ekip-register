@@ -6,7 +6,8 @@
     "Register": ["REGISTER_AUTHOR_ROLES"],
     "Unregistered": "UNREGISTER_ROLE",
     "Tagged": "FAMILY_ROLE",
-    "Vip": "VIP_ROLE"
+    "Vip": "VIP_ROLE",
+    "Booster": "BOOSTER_ROLE"
 }, "Channels": {
     "Register": "REGISTER_CHANNEL",
     "Rules": "RULES_CHANNEL",
